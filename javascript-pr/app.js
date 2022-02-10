@@ -1,0 +1,11 @@
+let canvas = document.getElementById('mycanvas');
+let ctx = canvas.getContext('2d');
+ctx.fillStyle = 'green';
+ctx.fillRect(10, 10, 400, 200);
+let centerX = canvas.width / 2;
+let centerY = canvas.height / 2;
+ctx.beginPath();
+ctx.arc(centerX, centerY, 40, 0, 2 * Math.PI);
+ctx.fillStyle = 'red';
+ctx.fill();
+ctx.stroke();
